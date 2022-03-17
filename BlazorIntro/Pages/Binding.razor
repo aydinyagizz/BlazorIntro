@@ -1,0 +1,11 @@
+﻿@page "/binding"
+@page "/baglama"
+<h3>Binding</h3>
+
+    <input @bind-value="FirstName" @bind-value:event="oninput" size="100"/>
+
+<h3>@FirstName</h3>
+
+@code {
+    public string FirstName { get; set; } = "Aydın";
+}

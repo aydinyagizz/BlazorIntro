@@ -1,0 +1,13 @@
+﻿<h3>StudentDetail for @StudentName</h3>
+
+
+<button class="btn btn-primary" @onclick="Tikla">Kaydet</button>
+
+@code {
+    //dışarıdan, üst component'ten data alabilir demek
+    [Parameter]
+    public string StudentName { get; set; }
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> Tikla { get; set; }
+}
