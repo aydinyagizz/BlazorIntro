@@ -8,11 +8,11 @@ using BlazorIntro.Models;
 
 namespace BlazorIntro.Services
 {
-    public class MayApi : IApiService
+    public class MyApi : IApiService
     {
         private HttpClient _http;
 
-        public MayApi(HttpClient http)
+        public MyApi(HttpClient http)
         {
             _http = http;
         }
